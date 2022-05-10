@@ -4,3 +4,16 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
+#landing {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(93, 107, 120);
+}
+
+#landing > h2, h3 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: stayAndShine, serif;
+}
