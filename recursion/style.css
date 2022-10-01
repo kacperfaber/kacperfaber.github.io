@@ -1,0 +1,30 @@
+body, html {
+	margin: 0;
+}
+
+@font-face {
+  font-family: charger;
+  src: url(../common/fonts/charger.otf);
+}
+
+.landing.purple {
+	background-color: rgba(52, 106, 255, 1);
+	background-image: radial-gradient(circle, rgba(52, 106, 255, 1) 0%, rgba(0, 46, 181, 1) 100%);
+}
+
+#appContainer {
+	font-family: charger;
+}
+
+#greetingRow {
+	
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row > div {
+	padding: 25px;
+}
