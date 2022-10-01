@@ -12,9 +12,11 @@ body, html {
 	background-image: radial-gradient(circle, rgba(52, 106, 255, 1) 0%, rgba(0, 46, 181, 1) 100%);
 }
 
-#appContainer {
-	font-family: charger;
+.landing {
+	color: white;
 }
+
+#appContainer {}
 
 #greetingRow {
 	
