@@ -7,10 +7,15 @@ body, html {
   src: url(../common/fonts/charger.otf);
 }
 
-.landing.purple {
+.landing.blue {
 	background-color: rgba(52, 106, 255, 1);
 	background-image: radial-gradient(circle, rgba(52, 106, 255, 1) 0%, rgba(0, 46, 181, 1) 100%);
 }
+
+pre {
+    text-align: left;
+	white-space: pre-line;
+  }
 
 .landing {
 	color: white;
@@ -29,4 +34,8 @@ body, html {
 
 .row > div {
 	padding: 25px;
+}
+
+.vh-150 {
+	width: 150vh;
 }

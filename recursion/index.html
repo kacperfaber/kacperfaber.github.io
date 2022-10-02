@@ -10,10 +10,10 @@
 		<div id="appContainer">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="landing purple vh-100 col-12">
+					<div class="landing blue vh-100 col-12">
 						<div style="width: 50%;" class="center">
 							<h2>Rekurencja, Rekursja, Algorytmy C++</h2>
-							<p class="text-muted">Kacper Faber</p>
+							<p>Kacper Faber</p>
 						</div>
 					</div>
 				</div>
@@ -30,13 +30,24 @@
 							<h2>Algorytmy w C++</h2>
 							
 							<p>
-								<strong>TODO:</strong>
+								Język C++ posiada wbudowaną bibliotekę nazwaną "algorithm".
+								Zawiera ona przygotowane dla programisty algorytmy mogące sie przydać np. 
+								
+								<ul>
+									<li>count - liczy wystąpienia elementu w liście</li>
+									<li>count_if - liczy wystąpienia elementów spełniających warunek</li>
+									<li>for_each - iteracja po wszystkich elementach</li>
+									<li>sort - sortuje elementy</li>
+									<li>reverse - obraca liste</li>
+									<li>max - szuka największej wartości wystepującej w liście</li>
+									<li>min - szuka najmniejszej wartości wystepującej w liście</li>
+								</ul>
 							</p>
 						</div>
 					</div>
 				</div>
 				
-				<div class="row landing purple">
+				<div class="row landing blue">
 					<div class="vh-100 col-12">
 						<h2>
 							Co to jest rekurencja?
@@ -89,6 +100,163 @@
 						</p>
 					</div>
 				</div>
+				
+				<div class="row">
+					<div class="vh-100 col-12 landing blue">
+						<h3>
+							Ciąg fibonacciego
+						</h3>
+						<p>
+							Każdy element ciągu zawiera sume dwóch poprzednich np. <strong>1, 1, 2, 3, 5</strong>
+						</p>
+						
+						<h4>
+							Funkcja
+						</h4>
+						
+						<p>
+							Wzór na wartość elementu można zapisać nastepująco
+						</p>
+						
+						<p>
+							F
+n
+−
+2
+ 
++
+F
+n
+−
+1
+
+						</p>
+					</div>
+					
+					
+				</div>
+				
+				<div class="row">
+						<div class="vh-100 col-12">
+							<h3>Zbiór Cantora</h3>
+							<p>
+								Pozbiór prostej rzeczywistej odkryty w 1875r. opisany przez niemieckiego matematyka Georga Cantora.
+							</p>
+							<p>
+								Generalnie, polega to na dzieleniu odcinka na trzy częsci oraz usunięciu środkowej, oraz powtarzanie procesu dla wszystkich pozostałych częsci.
+							</p>
+							<h4>Właściwości zbioru Cantora</h4>
+							<p>
+								<ul>
+									<li>
+										Długość zbioru cantora wynosi 0
+									</li>
+									<li>
+										Jest równoliczny ze zbiorem liczb rzeczywistych
+									</li>
+									<li>
+										Jest samopodobny - jest to fraktal.
+									</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-12 vh-150">
+							<h3> Algorytmy graficzne </h3>
+							
+							<p>
+								Przykładowe algorytmy graficzne
+								
+								<ul>
+									<li>Adam7</li>
+									<li>Algorytm Bresenhama</li>
+									<li>Flood fill</li>
+									<li>Krzyż Robertsa</li>
+									<li>Kwaterniony</li>
+									<li>Algorytm malarza</li>
+									<li>Algorytm Prewitt</li>
+									<li>Sobel</li>
+									<li>Szum Perlina</li>
+									<li>Algorym Warnocka</li>
+								</ul>	
+							</p>
+							
+							<br>
+							
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-12 col-sm-6">
+										<h3>Adam7</h3>
+										<p>
+											Algorytm przeplotu stosowany w obrazach PNG.
+											Przeplatany obraz zbudowany jest z siedmiu podobrazów. Każdy z nich jest zbudowany na podstawie repliki wzoru [8x8] na całym obrazie docelowym.
+											Algorytm działa w dwóch wymiarach. Nazwa pochodzi od Adama Costello - wynalazcy algorytmu.
+										</p>
+									</div>
+									<div class="col-12 col-sm-6">
+										<h3>Algorytm Maszerujących Sześcianów</h3>
+										<p>
+											Algorytm opracowany w 1987r. jest stosowany w grafice komputerowej. Dla zadanego przestrzennego pola skalarnego tworzy siatkę wielokątów. Potrafi to wygenerować model 3D na podstawie zdjęć 2D.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-12">
+							<h3>
+								Trójkąt sierpińskiego
+							</h3>
+							<p>
+								Jest to fraktal przedstawiony przez polskiego matematyka Wacława Sierpińskiego w 1915r. 
+							</p>
+							<br>
+							
+							<h4>
+								Sposób otrzymania
+							</h4>
+							
+							<p>
+								Trójkąt otrzymujemy łącząc środki boków trójkąta równobocznego na mniejsze trójkąty. Można otrzymać nieskończenie wiele mniejszych trójkątow.
+							</p>
+							<br>
+							
+							<h4>
+								Występowanie w naturze
+							</h4>
+							
+							<p>
+								Do fraktali można porównać np. płatki śniegu.
+							</p>
+							
+							<br>
+							<br>
+							<br>
+							<br>
+							<br>
+							
+							
+							<h3>
+								Dywan sierpińskiego
+							</h3>
+							
+							<p>
+								Jest to fraktal który powstaje po podzieleniu kwadratu na 9 częsci, usunięciu środkowego oraz powtórzenia operacji 'x' razy.
+							</p>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-12 vh-100 landing blue">
+							<div class="">
+								<h3>Kacper Faber</h3>
+							</div>
+						</div>
+					</div>
 			</div>
 		</div>
 	</body>
