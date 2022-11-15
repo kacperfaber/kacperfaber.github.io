@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHP - Ciąg Dalszy</title>
+    <link href="/common/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="container-fullwidth">
+    <div class="row">
+        <div class="col-12">
+            <div id="welcome" class="welcome landing purple">
+                <h1>PHP - Ciąg Dalszy</h1>
+                <p>Kacper Faber</p>
+                <p>4TB</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 ">
+            <div class="landing white">
+                <h2>Co to jest PHP?</h2>
+                <p>
+                    Jest to interpretowany, skryptowy język programowania zaprojektowany do generowania stron
+                    internetowych
+                    i budowania aplikacji webowych w czasie rzeczywistym.
+                    PHP jest najczęściej stosowany do tworzenia skryptów po stronie serwera WWW, ale może być on również
+                    używany do przetwarzania danych z poziomu wiersza poleceń, a nawet do pisania programów pracujących
+                    w
+                    trybie graficznym (np. za pomocą biblioteki GTK+, używając rozszerzenia PHP-GTK). Implementacja PHP
+                    wraz
+                    z serwerem WWW Apache oraz serwerem baz danych MySQL określana jest jako platforma AMP (w środowisku
+                    Linux – LAMP, w Windows – WAMP).
+                    Według W3Techs PHP jest używany przez 77,4% wszystkich stron internetowych, których język
+                    programowania
+                    po stronie serwera jest znany (stan 2022-05-07).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="landing purple">
+                <h2>Przykładowe narzędzia do programowania w PHP</h2>
+                <p>Możemy wyróżnić dwie kategorie:</p>
+                <br>
+                <p><strong>Uruchamianie</strong> - Służące do uruchomienia napisanego programu.</p>
+                <p><strong>Pisanie</strong> - Służące do pisania kodu PHP</p>
+                <p><strong>Testowanie</strong> - Testowanie napisanego przez nas kodu.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="landing purple text-center">
+                <h2>Uruchamianie</h2>
+                <p>Narzędzia i programy potrzebne, żeby uruchomić program napisany w PHP</p>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>Serwer Lokalny-do tzw. produkcji</h4>
+                            <p>Np. Apache ze wtyczką do PHP</p>
+                            <p>Lub XAMPP [pakiet zawiera skonfigurowany program Apache]</p>
+                        </div>
+
+                        <div class="col-6">
+                            <h4>Serwer Online-do opublikowania strony w internecie</h4>
+                            <p>Poprawnie skonfigurowany intepreter PHP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="landing purple">
+                <h2>Pisanie - IDE</h2>
+                <p>Przykładowe programy do pisania kodu PHP</p>
+                <p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5 offset-1">
+                            <h4>PhpStorm - JetBrains</h4>
+                            <p>Najbardziej zaawansowane środowisko programistyczne</p>
+                        </div>
+
+                        <div class="col-5 offset-1">
+                            <h4>Notepad++</h4>
+                            <p>Łatwo dostępny i konfigurowalny notatnik</p>
+                        </div>
+
+                        <div class="col-5 offset-1">
+                            <h4>Sublime Text</h4>
+                            <p>Notatnik</p>
+                        </div>
+
+                        <div class="col-5 offset-1">
+                            <h4>Eclipse</h4>
+                            <p>Otwarto-Źródłowe środowisko programistyczne</p>
+                        </div>
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="purple landing">
+                <h2>Testowanie</h2>
+                <p>Testowanie kodu, czyli pisanie małych programów sprawdzających, czy kawałek kodu zachowuje sie
+                    zgodnie z
+                    przewidywaniami.</p>
+
+                <p>
+                    <strong>phpunit</strong> - Framework do testowania kodu PHP.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="landing white center-text">
+                <h2>Pakiet XAMPP</h2>
+                <p>XAMPP to pakiet zawierający i uruchamiający program Apache, serwer MySQL, interpreter PHP oraz języka
+                    Perl.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="landing white" style="height: 125vh;">
+                <h2>Konfiguracja XAMPP</h2>
+                <p>1. Instalacja programu XAMPP</p>
+                <img src="xampp-img/install.png" alt="Install"/>
+                <p>2. Uruchamianie poszczególnych usług</p>
+                <img src="xampp-img/run-services.png" alt="RunServices"/>
+                <p>3. Obok poszczególnych usług znajdują się przyciski przekierowujące np. do plików z logami czy
+                    konfiguracji.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="landing purple" style="height: 200vh;">
+                <h2>Składnia języka PHP</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5 offset-1">
+                            <h4>Komentarze</h4>
+                            <p>Komentarze są ignorowane przez interpreter, ten fragment kodu nic nie wywoła. Można tam
+                                wstawić notatki lub adnotacje o autorze.</p>
+                            <p>Komentarze zapisujemy poprzez: </p>
+                            <p>// - komentarzem jest cała linia od wystąpienia tego znaku.</p>
+                            <p>/* ... */ - Komentarzem jest fragment pomiędzy znakami</p>
+                        </div>
+
+                        <div class="col-5 offset-1">
+                            <h4>Operatory</h4>
+                            <p>+ - Operator dodawania</p>
+                            <p>- - Operator odejmowania</p>
+                            <p>/ + Operator dzielenia</p>
+                            <p>* - Operator mnożenia</p>
+                            <p>= - Operator przypisania</p>
+                            <p>== - Operator porównania</p>
+                            <p>>> / << - Operator[y] przesunięcia bitowego</p>
+                            <p>& - Operator "adresu", zapisuje referencje do wartości, a nie samą wartość</p>
+                            <p>< - Lewa strona mniejsza od prawej</p>
+                            <p>> - Prawa strona większa od lewej</p>
+                            <p>>= - lewa strona większa bądź równa prawej</p>
+                            <p><= - prawa strona większa bądź równa lewej</p>
+                            <p>-> - Operator uzyskania dostępu do zmiennej</p>
+                        </div>
+
+
+                        <div class="col-5 offset-1">
+                            <h4>Instrukcje warunkowe</h4>
+                            <p class="code">if (/* Warunek logiczny */) { /* Co sie wydarzy gdy warunek zostanie
+                                spełniony */}</p>
+                            <p class="code">else if (/* Warunek */) { /* Co sie wydarzy warunek został spełniony, ale
+                                warunek napisany bezpośrednio powyżej nie */}</p>
+                            <p class="code">else { /* Gdy warunek napisany bezpośrednio powyżej nie został spełniony
+                                */}</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="landing purple">
+                <h4>Pętle</h4>
+                <p>Ten sam fragment kodu wykonuje sie wiele razy, do momentu przerwania. Wykorzystywane są również do
+                    iteracji po elementach jakiejś listy.</p>
+
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>for</h4>
+                            <p class="code">for (/* zmienna */; */ warunek np. zmienna mniejsza niz 5 */; /* Co sie
+                                dzieje po każdej iteracji np. zmienna dodać 1*/)</p>
+                            <p style="font-family: 'Comic Sans MS', serif">for ($x=0; $x<100; $x++) {/* kod do
+                                wywoływania za każdym razem */</p>
+                        </div>
+                        <div class="col-6">
+                            <h4>while</h4>
+                            <p class="code">while (/*warunek*/) {*/ kod */ } - dopóki warunek jest spełniony</p>
+                            <p class="code">while (true) { echo "x"; } // zawiesza stronę, bo pętla pracuje cały
+                                czas.</p>
+                        </div>
+
+                        <div class="col-6">
+                            <h4>foreach</h4>
+                            <p class="code">foreach (/* tablica */ as */ zmienna */) { // kod }</p>
+                            <p class="code">Foreach wykonuje się dla każdego elementu listy [iteracja]</p>
+                        </div>
+
+                        <div class="col-6">
+                            <h4>operatory przy pętlach</h4>
+                            <p class="code">break - Przerywa pętle i wychodzi z niej [idzie dalej]</p>
+                            <p class="code">continue - Przewija pętle raz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="landing purple">
+                <h1>Kacper Faber</h1>
+                <p>dziekuje za uwage</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
