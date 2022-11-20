@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Informatyka</title>
+    <link rel="stylesheet" href="/common/lib/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="landing welcome blue">
+                <h1>Informatyka - Algorytmy</h1>
+                <h3>Kacper Faber</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="landing">
+                <h2>Co to jest anagram?</h2>
+                <p>Anagram to wyraz którego litery składają się również w inny wyraz</p>
+                <p>Przykłady:</p>
+                <p>ABC -> CBA: Te dwa wyrazy są anagramami do siebie</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="landing">
+                <h2>Sprawdzanie czy wyrazy są anagramami.</h2>
+                <h2>Sposób nr. 1</h2>
+                <p>Istnieje na to kilka sposobów, można np. wykorzystać, że każda litera zapisana w pamięci odpowiada
+                    liczbie.</p>
+                <p>Można tym sposobem stworzyć sumę ze wszystkich liter wyrazu nr 1. oraz nr 2. oraz sprawdzić czy
+                    różnica tych wyników jest równa 0.</p>
+                <p></p>
+                <h2>Sposób nr. 2</h2>
+                <p>Można stworzyć listy bazujące na literach, oraz usuwać litery z wyrazu drugiego.</p>
+                <p>Tym sposobem, o ile wyrazy są anagramami, finalnie jedna z list:
+                <ul>
+                    <li>Pusta</li>
+                    <li>Nie nastąpi usunięcie elementu z już pustej liczby</li>
+                </ul>
+                <p>Natomiast pierwszy sposób jest dużo lepszy...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <h2>Przykładowa funkcja w C++</h2>
+            <pre class="code">
+bool is_anagram(char *a, char *b)
+{
+  	int x1 = strlen(a), x2 = strlen(b);
+	if(x1!=x2) return false;
+
+  	int z[256]={};
+  	for(int i=0;i< x1;i++) {
+  	    z[a[i]]++;
+  	}
+
+  	for(int i=0;i< x1;i++) {
+  	    z[b[i]]--;
+  	}
+
+
+  	for(int i=0;i<127;i++) {
+  	    if(z[i]!=0) {
+  	        return false;
+  	    }
+  	}
+
+
+  return true;
+}
+            </pre>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="landing blue">
+                <h1>Algorytmy zachłanne</h1>
+                <p>
+                    Algorytm zachłanny (ang. greedy algorithm) – algorytm, który w celu wyznaczenia rozwiązania w każdym
+                    kroku dokonuje zachłannego, tj. najlepiej rokującego w danym momencie wyboru rozwiązania
+                    częściowego. Innymi słowy algorytm zachłanny nie dokonuje oceny czy w kolejnych krokach jest sens
+                    wykonywać dane działanie, dokonuje decyzji lokalnie optymalnej, dokonuje on wyboru wydającego się w
+                    danej chwili najlepszym, kontynuując rozwiązanie podproblemu wynikającego z podjętej decyzji.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="landing">
+                <h1>Algorytmy wyszukiwania wzorca w tekście</h1>
+                <p>Wzorzec - podtekst</p>
+                <p></p>
+                <p></p>
+                <h1>Algorytm wyszukiwania - tzw. naiwny</h1>
+                <p>Wyszukiwanie szuka pierwszego znaku ze wzorca, jeśli znajdzie zaczyna szukać następnej litery lub
+                    przerywa i zaczyna szukać od nowa.</p>
+                <p></p>
+                <h3>Przykładowa funkcja w C++</h3>
+                <pre class="code">int contains(string pattern, string text)
+{
+	for(int i=0; i <= text.size() - pattern.size(); i++)
+	{
+		int x = 0;
+		for(int j=0; j< pattern.size(); j++)
+		{
+			if(pattern[j] != text[i + x])
+				break;
+			if(j == pattern.size() - 1)
+				return i+1;
+			++x;
+		}
+	}
+	return -1;
+}
+
+// Przedstawiona funkcja zwraca indeks znaku, w którym wzorzec się zaczyna o ile zostanie znaleziono. Jeśli nie to -1.
+                </pre>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="landing blue">
+                <h2>Drzewa poszukiwań binarnych</h2>
+                <p>Binarne drzewo poszukiwań (ang. Binary Search Tree, BST) – dynamiczna struktura danych będąca drzewem
+                    binarnym, w którym lewe poddrzewo każdego węzła zawiera wyłącznie elementy o kluczach mniejszych niż
+                    klucz węzła a prawe poddrzewo zawiera wyłącznie elementy o kluczach nie mniejszych niż klucz węzła.
+                    Węzły, oprócz klucza, przechowują wskaźniki na swojego lewego i prawego syna oraz na swojego ojca.</p>
+
+                <p>Operacje:</p>
+                <ul>
+                    <li>
+                        Wyszukiwanie klucza
+                    </li>
+                    <li>Wstawania klucza</li>
+                    <li>Usuwanie klucza</li>
+                </ul>
+
+                <h2>Operacja wyszukiwania klucza</h2>
+                <img class="white" src="bst1.png" alt="bt1">
+
+                <h2>Operacja usuwania</h2>
+                <img class="white" src="bt2.png" alt="bt2">
+                <br>
+
+                <img class="white" src="b3.png" alt="bt2">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="welcome landing blue">
+                <h1>Koniec</h1>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
